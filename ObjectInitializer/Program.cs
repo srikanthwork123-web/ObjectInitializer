@@ -21,6 +21,7 @@ namespace ObjectInitializer
         {
             Console.WriteLine("I am displaying Data");
         }
+        public int StudentAge {  get; set; } //shortcut way of writing the property
 
     }
 //***To see the project path (goto project name in solution explorer window=>RightClick=>OpenInFileExplorer.
@@ -31,6 +32,8 @@ namespace ObjectInitializer
         {
             //****normal way of accessing the class variables and methods*****
             Student studentObj=new Student();
+            studentObj.StudentAge = 10;//assign the data to Automatic propert variable.
+           int result=studentObj.StudentAge;//accessing the data of automatic property value.
             studentObj.DisplayData();//calling the student method here.
             studentObj.studentid = 1;//assign the data to the varibales
             studentObj.studentname = "JNTU";
